@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.container_container-header,
+.container_container-main{
+    padding:0 10%;
+    margin: 0;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    background-color: antiquewhite;
+}
+
+.container_container-main{
+    font-family: 'Monoton', cursive;
+}
+
+.container_container-header_nav{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container_container-header_nav_ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: indigo;
+    border-radius: 15px;
+}
+
+.container_container-header_nav_ul_li{
+    list-style: none;
+    margin:15px;
+}
+
+.container_container-header_nav_ul_li_a{
+    text-decoration: none;
+    color: cadetblue;
+    font-size: larger;
+    font-weight: 400;
+    word-spacing: 20px;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.container_container-header_nav_ul_li_a:hover{
+    color: gold;
+}
+
+.container_container-main_form-search{
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container_container-main_form-search_input-search{
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    width:70%;
+    border:1px solid black;
+}
+
+.container_container-main_form-search_input-search:hover{
+    border:1px solid burlywood;
+
+}
+
+.container_container-main_form-search_submit-button{
+    padding: 8px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 7px;
+    background-color: crimson;
+    color: azure;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.container_container-main_article-get-movies{
+    padding: 20px;
+}
+
+.container_container-main_article-get-movies_by-name{
+    padding: 20px;
+}
+
+.container_container-main_article-get-movies_by-name_p{
+    position: static;
+    line-height: 30px;
+    word-break: keep-all;
+    word-spacing: 7px;
+    font-size: 20px;
+    color: blueviolet;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.container_container-main_article-get-movies_by-name_p:hover{
+    background-color: deepskyblue;
+    opacity: 0.6;
+}
+
+.container_container-header_nav_ul_li_ul-request{
+    /* visibility: hidden; */
+    display: none;
+    position: absolute;
+    top: 7%;
+    height: 100%;
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: -30px;
+    padding-top: 20px;
+}
+
+.container_container-header_nav_ul_li_ul-request_li_a{
+    display: none;
+    visibility: hidden;
+    padding:20px;
+    text-decoration: none;
+    color: gold;
+    font-size: medium;
+    font-weight: 400;
+    word-spacing: 20px;
+    font-family: 'Rubik Mono One', sans-serif;
+    width: 300px;
+    background-color: darkslategrey;
+    border: none;
+    opacity: 0.9;
+    cursor:pointer;
+}
+
+.container_container-header_nav_ul_li_ul-request_li{
+    list-style: none;
+    visibility: hidden;
+    display: none;
+    width: 300px;
+}
+
+.container_container-main_article-get-movies_by-name_p-link{
+    background-color: white;
+    color: cadetblue;
+    font-size: medium;
+    font-weight: 400;
+    font-family: 'Orbitron', sans-serif;
+    width: 40px;
+    height: 30px;
+    margin:10px;
+}
+
+.container_container-main_article-get-movies_by-name_p-pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+/* .container_container-header_nav_ul_li_ul-request:hover{
+    visibility: visible;
+    position: absolute;
+    top: 10%;
+    height: 100px;
+    width: 300px;
+    margin: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container_container-header_nav_ul_li_ul-request_li_a:hover{
+    padding:20px;
+    text-decoration: none;
+    color: gold;
+    font-size: medium;
+    font-weight: 400;
+    word-spacing: 20px;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.container_container-header_nav_ul_li_ul-request_li:hover{
+    visibility: visible;
+} */
+
