@@ -14,6 +14,7 @@ $id_movie = $stmtQueryGenre->fetchAll();
 //var_dump($id_movie);
 $count = 0;
 $buttons = array();
+echo "<p class=\"container_container-main_article-get-movies_by-name_h1\" name=\"movie\">Resultats par GENRE</p>";
 foreach ($id_movie as $key => $value) {
 
     $stmtQueryGenre = $db->prepare("select title from movie where id=:id");
@@ -25,7 +26,7 @@ foreach ($id_movie as $key => $value) {
     //echo $value["id_movie"];
     //echo $count;
     //echo $key;
-    $res = (intval($key) + 1) % 30;
+    $res = (intval($key) + 1) % 12;
     //echo " $count";
     if ($count < 10) {
         $button = "<button class=\"container_container-main_article-get-movies_by-name_p-link button" . ($count) . "\" id=\"$count\" name=\"visible\" style=\"display:;visibility:;\">" . ($count + 1) . "</button>";
@@ -39,9 +40,9 @@ foreach ($id_movie as $key => $value) {
     // var_dump($buttons);
     if ($res == 0) {
         $count += 1;
-        echo "<p class=\"container_container-main_article-get-movies_by-name_p class$count\" name=\"$count\">" . $id_movie["title"] . "</p>";
+        echo "<p class=\"container_container-main_article-get-movies_by-name_p border class$count\" name=\"$count\">" . $id_movie["title"] . "</p>";
     } else {
-        echo "<p class=\"container_container-main_article-get-movies_by-name_p class$count\" name=\"$count\">" . $id_movie["title"] . "</p>";
+        echo "<p class=\"container_container-main_article-get-movies_by-name_p border class$count\" name=\"$count\">" . $id_movie["title"] . "</p>";
     }
 
 }
@@ -141,9 +142,9 @@ $script = $start . $middle . $scriptButtons .$end;
         // var_dump($buttons);
         if ($res == 0) {
             $count += 1;
-            echo "<p class=\"container_container-main_article-get-movies_by-name_p class$count\" name=\"$count\">" . $id_movie["title"] . "</p>";
+            echo "<p class=\"container_container-main_article-get-movies_by-name_p border border class$count\" name=\"$count\">" . $id_movie["title"] . "</p>";
         } else {
-            echo "<p class=\"container_container-main_article-get-movies_by-name_p class$count\" name=\"$count\">" . $id_movie["title"] . "</p>";
+            echo "<p class=\"container_container-main_article-get-movies_by-name_p border border class$count\" name=\"$count\">" . $id_movie["title"] . "</p>";
         }
     
     }
@@ -155,7 +156,6 @@ $script = $start . $middle . $scriptButtons .$end;
     
     
         echo "$buttons[$i]";
-    
     
     
     

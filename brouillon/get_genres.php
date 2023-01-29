@@ -21,7 +21,7 @@ foreach ($genre as $value) {
 
     // affichage des genres dans le menu en display none et en display block au moment du hover sur le menu
 ?>
-    <li class="container_container-header_nav_ul_li_ul-request_li"><form action="./index.php" method="get"><button class="container_container-header_nav_ul_li_ul-request_li_a" type="submit" name="id_genre" value="<?php echo $id;?>"><?php echo $name;?></button></form></li>
+    <li class="container_container-header_nav_ul_li_ul-request_li"><form action="./index.php" method="get" class="container_container-header_nav_ul_li_ul-request_li_form"><button class="container_container-header_nav_ul_li_ul-request_li_a" type="submit" name="id_genre" value="<?php echo $id;?>"><?php echo $name;?></button></form></li>
 <?php
 }
 
